@@ -149,3 +149,106 @@ a:hover, a:focus { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }
 }
+
+
+/* ------------------------------
+   Contact Section
+--------------------------------*/
+
+/* General text links (Resume, Shot Breakdown, Email) */
+.contact-text-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;    /* center horizontally */
+    gap: 8px;               /* space between each link */
+}
+
+.contact-text-links li a {
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-text-links li a:hover {
+    color: #ffcc00;
+}
+
+/* Icon links (LinkedIn & IMDb) */
+.contact-icon-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    gap: 20px;        /* spacing between icons */
+    justify-content: center; /* center horizontally */
+}
+
+.contact-icon-links a {
+    color: #ffffff;
+    font-size: 2rem;
+    transition: transform 0.2s, color 0.2s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-icon-links a:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
+
+/* Location */
+.contact-location {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.contact-location i {
+    margin-right: 8px;
+    color: #ffcc00;
+}
+
+
+
+/* ------------------------------
+   Buttons for Resume & Shot Breakdown
+--------------------------------*/
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px 5px 5px 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #0f1a4d;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #1b2e82;
+    transform: scale(1.05);
+}
+
+.btn-download {
+    background-color: ##000000;
+    color: #000000;
+}
+
+.btn-download:hover {
+    background-color: ##1b2e82;
+    transform: scale(1.05);
+}
+
+/* Center the button rows */
+.contact-text-links li {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* space between buttons */
+}
+
