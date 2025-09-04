@@ -71,8 +71,8 @@ a:hover, a:focus { color: var(--accent); }
 /* ---------- Sections ---------- */
 .section { padding: 3.5rem 0; }
 .section--alt { background: var(--bg-alt); border-block: 1px solid var(--border); }
-.section-title { font-size: clamp(1.5rem, 3.5vw, 2rem); margin: 0 0 1rem 0; }
-.section-intro { color: var(--muted); margin: 0 0 1.5rem 0; }
+.section-title { font-size: clamp(1.5rem, 3.5vw, 2rem); text-align: center; /* Horizontal centering */ margin: 0 0 1rem 0; }
+.section-intro { color: var(--muted); text-align: center; /* Horizontal centering */ margin: 0 0 1.5rem 0; }
 
 /* ---------- Reels ---------- */
 .reel-grid {
