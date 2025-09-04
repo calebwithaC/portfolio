@@ -33,7 +33,6 @@ a:hover, a:focus { color: var(--accent); }
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6); /* subtle depth */
 }
 
-
 .headline {
   font-size: clamp(3rem, 7vw, 5rem); /* bigger */
   margin: 0 0 .25rem 0;
@@ -52,15 +51,11 @@ a:hover, a:focus { color: var(--accent); }
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* subtle depth */
 }
 
-
-
-
 .subhead {
   margin: 0 0 1.75rem 0;
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.5); /* glow in accent colour */
 }
-
 
 .cta-row { display: inline-flex; gap: .75rem; flex-wrap: wrap; }
 .button {
@@ -86,12 +81,42 @@ a:hover, a:focus { color: var(--accent); }
   gap: 1.25rem;
 }
 
+/* Entire showreels section with glow */
+#showreels {
+  background-color: #161616;
+  padding: 50px 20px;
+  border-radius: 14px;
+  box-shadow:
+    0 0 30px 5px rgba(15, 26, 77, 0.3),
+    0 10px 20px rgba(15, 26, 77, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#showreels:hover {
+  box-shadow:
+    0 0 40px 10px rgba(15, 26, 77, 0.4),
+    0 12px 24px rgba(15, 26, 77, 0.25);
+}
+
 .reel-card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow:
+    0 4px 12px rgba(15, 26, 77, 0.2),
+    0 0 15px rgba(15, 26, 77, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reel-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 6px 16px rgba(15, 26, 77, 0.25),
+    0 0 20px rgba(15, 26, 77, 0.15);
 }
 
 .reel-card h3 { margin: .85rem 0 .25rem; font-size: 1.1rem; }
@@ -144,12 +169,10 @@ a:hover, a:focus { color: var(--accent); }
   opacity: 1; /* subtle hover effect */
 }
 
-
 /* ---------- Responsive tweaks ---------- */
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }
 }
-
 
 /* ------------------------------
    Contact Section
@@ -161,9 +184,9 @@ a:hover, a:focus { color: var(--accent); }
     padding: 0;
     margin: 10px 0;
     display: flex;
-    flex-direction: column; /* stack vertically */
-    align-items: center;    /* center horizontally */
-    gap: 8px;               /* space between each link */
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .contact-text-links li a {
@@ -183,8 +206,8 @@ a:hover, a:focus { color: var(--accent); }
     padding: 0;
     margin: 15px 0;
     display: flex;
-    gap: 20px;        /* spacing between icons */
-    justify-content: center; /* center horizontally */
+    gap: 20px;
+    justify-content: center;
 }
 
 .contact-icon-links a {
@@ -212,8 +235,6 @@ a:hover, a:focus { color: var(--accent); }
     color: #ffcc00;
 }
 
-
-
 /* ------------------------------
    Buttons for Resume & Shot Breakdown
 --------------------------------*/
@@ -234,21 +255,10 @@ a:hover, a:focus { color: var(--accent); }
     transform: scale(1.05);
 }
 
-.btn-download {
-    background-color: ##000000;
-    color: #000000;
-}
-
-.btn-download:hover {
-    background-color: ##1b2e82;
-    transform: scale(1.05);
-}
-
 /* Center the button rows */
 .contact-text-links li {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px; /* space between buttons */
+    gap: 10px;
 }
-
