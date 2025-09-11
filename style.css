@@ -46,7 +46,7 @@ a:hover, a:focus { color: var(--accent); }
 .banner-image {
   width: 100%;
   height: 300px; /* adjust height as needed */
-  background-image: url('assets/banner2.jpg');
+  background-image: url('assets/banner.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -54,9 +54,6 @@ a:hover, a:focus { color: var(--accent); }
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-.banner-image:hover {
-  background-image: url('assets/banner2hover.jpg');
-}
 
 .subhead {
   margin: 0 0 1.75rem 0;
