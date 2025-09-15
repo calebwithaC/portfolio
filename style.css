@@ -44,7 +44,7 @@ a:hover, a:focus { color: var(--accent); }
 }
 
 .banner-image {
-  width: 100%;
+  max-width: 100%;
   height: auto; /* adjust height as needed */
   background-image: url('assets/banner.jpg');
   background-size: cover;
