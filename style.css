@@ -44,8 +44,8 @@ a:hover, a:focus { color: var(--accent); }
 }
 
 .banner-image {
-  max-width: 100%;
-  height: auto; /* adjust height as needed */
+  width: 100%;
+  aspect-ratio: 16 / 9;  /* keeps a video-like proportion */
   background-image: url('assets/banner.jpg');
   background-size: cover;
   background-position: center;
@@ -54,12 +54,10 @@ a:hover, a:focus { color: var(--accent); }
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-
-.subhead {
-  margin: 0 0 1.75rem 0;
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.5); /* glow in accent colour */
+.banner-image:hover {
+  background-image: url('assets/banner-hover.jpg');
 }
+
 
 .cta-row { display: inline-flex; gap: .75rem; flex-wrap: wrap; }
 .button {
