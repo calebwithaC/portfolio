@@ -28,9 +28,9 @@ a:hover, a:focus { color: var(--accent); }
 .site-header {
   background: linear-gradient(180deg, #000000 0%, #141414 60%, #0c0c0c 100%);
   border-bottom: 2px solid var(--border);
-  padding: 8rem 0 7rem; /* more vertical space */
+  padding: 4rem 0 3rem; /* less vertical padding since no headline/subhead */
   text-align: center;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6); /* subtle depth */
+  box-shadow: none; /* remove big shadow around the section */
 }
 
 .headline {
@@ -45,18 +45,16 @@ a:hover, a:focus { color: var(--accent); }
 
 .banner-image {
   width: 100%;
-  aspect-ratio: 16 / 9;  /* keeps a video-like proportion */
+  aspect-ratio: 16 / 9;          /* keeps it responsive */
   background-image: url('assets/banner.jpg');
-  background-size: cover;
-  background-position: center;
+  background-size: contain;      /* show whole image */
+  background-position: center;   /* center it */
+  background-repeat: no-repeat;  /* prevent tiling/mirroring */
   border-radius: 8px;
-  transition: background-image 0.3s ease-in-out;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* shadow just around image */
+  transition: none;
 }
 
-.banner-image:hover {
-  background-image: url('assets/banner-hover.jpg');
-}
 
 
 .cta-row { display: inline-flex; gap: .75rem; flex-wrap: wrap; }
